@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <PreferenceCategory
+        android:name="com.milicevic.listfragmentdemo.Fragment1"
+        android:drawableTop="@drawable/dodajzapis"
+        android:textColor="@color/material_dynamic_primary40"
+        android:title="Kreiraj obavezu"
+
+        >
+
+        <PreferenceScreen
+            android:icon="@drawable/dodajzapis"
+
+            android:key="kreiraj"
+            android:title="Dodaj zapis">
+
+
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Prikazi zapise">
+        <PreferenceScreen
+            android:icon="@drawable/svizapisi"
+            android:key="izlistaj"
+            android:summary="Kliknite 'Vidi zapis'"
+            android:title="Vidi zapis"
+
+            >
+
+
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

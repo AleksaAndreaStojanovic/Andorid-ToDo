@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#ffffff"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sve beleske"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/svizapisi" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:onClick="prikazi"
+        android:textColor="@color/purple_200"
+        android:backgroundTint="@color/black"
+        android:text="sve" />
+
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="10dp"
+            android:onClick="obrisi"
+            android:text="obrisi"
+            android:textColor="@color/purple_200"
+            android:backgroundTint="@color/black"
+            />
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="10dp"
+            android:onClick="prikaziINV"
+            android:text="izmeni"
+            android:textColor="@color/purple_200"
+            android:backgroundTint="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/txtObrisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Upisite ID zapisa koji zelite da obrisete:"
+        android:textColorHint="@color/purple_200"
+        android:textColor="@color/purple_200"
+        android:gravity="center"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtIzlistaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/purple_200"
+
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/izmeniInvisible"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:rotationY="0"
+            android:text="Izmena"
+            android:textSize="50dp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/txtInvisibleNaslov"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:text="Naslov" />
+
+        <EditText
+            android:id="@+id/invisibleNaslov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:hint="Unesite naslov.."
+            android:textColorHint="@color/purple_200"
+            android:textColor="@color/purple_200"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/txtInvisibleOpis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+
+            android:text="Opis" />
+
+        <EditText
+            android:id="@+id/invisibleOpis"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:hint="Unesite opis.."
+            android:textColorHint="@color/purple_200"
+            android:textColor="@color/purple_200"
+            android:visibility="invisible"
+            android:ems="10" />
+        <Button
+            android:id="@+id/btnSacuvaj"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:onClick="izmeni"
+            android:text="sacuvaj"
+            android:textColor="@color/purple_200"
+            android:backgroundTint="@color/black"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
